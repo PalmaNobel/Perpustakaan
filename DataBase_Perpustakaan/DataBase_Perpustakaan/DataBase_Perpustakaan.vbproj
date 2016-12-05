@@ -110,6 +110,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>perpustakaanDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="tb_pengembalian.Designer.vb">
+      <DependentUpon>tb_pengembalian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tb_pengembalian.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

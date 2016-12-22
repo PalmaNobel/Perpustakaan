@@ -116,6 +116,12 @@
     <Compile Include="tb_pengembalian.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="tb_petugas.Designer.vb">
+      <DependentUpon>tb_petugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tb_petugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="tb_pinjam.Designer.vb">
       <DependentUpon>tb_pinjam.vb</DependentUpon>
     </Compile>
@@ -124,11 +130,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tb_pengembalian.resx">
+      <DependentUpon>tb_pengembalian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tb_petugas.resx">
+      <DependentUpon>tb_petugas.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

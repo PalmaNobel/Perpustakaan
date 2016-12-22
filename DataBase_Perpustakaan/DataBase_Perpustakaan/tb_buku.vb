@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class tb_buku
 
     Private Sub Tb_bukuBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Tb_bukuBindingNavigatorSaveItem.Click
         Me.Validate()
@@ -76,7 +76,7 @@
         Me.Tb_bukuTableAdapter.Fill(Me.PerpustakaanDataSet.tb_buku)
     End Sub
 
-    Private Sub keuarButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles keuarButton.Click
+    Private Sub keluarButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles keluarButton.Click
         Me.Close()
     End Sub
 

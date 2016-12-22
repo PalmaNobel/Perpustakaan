@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class tb_buku
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -28,7 +28,7 @@ Partial Class Form1
         Dim Kondisi_BukuLabel As System.Windows.Forms.Label
         Dim Tb_DataAnggota_id_AnggotaLabel As System.Windows.Forms.Label
         Dim Tb_DataAnggota_Tb_Buku_id_BukuLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(tb_buku))
         Me.PerpustakaanDataSet = New DataBase_Perpustakaan.perpustakaanDataSet()
         Me.Tb_bukuBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tb_bukuTableAdapter = New DataBase_Perpustakaan.perpustakaanDataSetTableAdapters.tb_bukuTableAdapter()
@@ -63,7 +63,7 @@ Partial Class Form1
         Me.hapusButton = New System.Windows.Forms.Button()
         Me.simpanButton = New System.Windows.Forms.Button()
         Me.refreshButton = New System.Windows.Forms.Button()
-        Me.keuarButton = New System.Windows.Forms.Button()
+        Me.keluarButton = New System.Windows.Forms.Button()
         Me.batalButton = New System.Windows.Forms.Button()
         Id_BukuLabel = New System.Windows.Forms.Label()
         Nama_BukuLabel = New System.Windows.Forms.Label()
@@ -394,14 +394,14 @@ Partial Class Form1
         Me.refreshButton.Text = "REFRESH"
         Me.refreshButton.UseVisualStyleBackColor = True
         '
-        'keuarButton
+        'keluarButton
         '
-        Me.keuarButton.Location = New System.Drawing.Point(539, 134)
-        Me.keuarButton.Name = "keuarButton"
-        Me.keuarButton.Size = New System.Drawing.Size(70, 28)
-        Me.keuarButton.TabIndex = 18
-        Me.keuarButton.Text = "KELUAR"
-        Me.keuarButton.UseVisualStyleBackColor = True
+        Me.keluarButton.Location = New System.Drawing.Point(539, 134)
+        Me.keluarButton.Name = "keluarButton"
+        Me.keluarButton.Size = New System.Drawing.Size(70, 28)
+        Me.keluarButton.TabIndex = 18
+        Me.keluarButton.Text = "KELUAR"
+        Me.keluarButton.UseVisualStyleBackColor = True
         '
         'batalButton
         '
@@ -418,7 +418,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 415)
         Me.Controls.Add(Me.batalButton)
-        Me.Controls.Add(Me.keuarButton)
+        Me.Controls.Add(Me.keluarButton)
         Me.Controls.Add(Me.refreshButton)
         Me.Controls.Add(Me.simpanButton)
         Me.Controls.Add(Me.hapusButton)
@@ -483,7 +483,7 @@ Partial Class Form1
     Friend WithEvents hapusButton As System.Windows.Forms.Button
     Friend WithEvents simpanButton As System.Windows.Forms.Button
     Friend WithEvents refreshButton As System.Windows.Forms.Button
-    Friend WithEvents keuarButton As System.Windows.Forms.Button
+    Friend WithEvents keluarButton As System.Windows.Forms.Button
     Friend WithEvents batalButton As System.Windows.Forms.Button
 
 End Class

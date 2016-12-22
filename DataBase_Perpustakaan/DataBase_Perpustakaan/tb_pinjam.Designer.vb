@@ -22,8 +22,16 @@ Partial Class tb_pinjam
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.SuspendLayout()
+        '
+        'tb_pinjam
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(742, 359)
+        Me.Name = "tb_pinjam"
         Me.Text = "tb_pinjam"
+        Me.ResumeLayout(False)
+
     End Sub
 End Class

@@ -351,6 +351,7 @@ Partial Class tb_buku
         '
         'tambahButton
         '
+        Me.tambahButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tambahButton.Location = New System.Drawing.Point(319, 74)
         Me.tambahButton.Name = "tambahButton"
         Me.tambahButton.Size = New System.Drawing.Size(70, 28)
@@ -360,6 +361,7 @@ Partial Class tb_buku
         '
         'editButton
         '
+        Me.editButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.editButton.Location = New System.Drawing.Point(468, 74)
         Me.editButton.Name = "editButton"
         Me.editButton.Size = New System.Drawing.Size(70, 28)
@@ -369,6 +371,7 @@ Partial Class tb_buku
         '
         'hapusButton
         '
+        Me.hapusButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.hapusButton.Location = New System.Drawing.Point(606, 74)
         Me.hapusButton.Name = "hapusButton"
         Me.hapusButton.Size = New System.Drawing.Size(70, 28)
@@ -378,6 +381,7 @@ Partial Class tb_buku
         '
         'simpanButton
         '
+        Me.simpanButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.simpanButton.Location = New System.Drawing.Point(752, 74)
         Me.simpanButton.Name = "simpanButton"
         Me.simpanButton.Size = New System.Drawing.Size(70, 28)
@@ -387,6 +391,7 @@ Partial Class tb_buku
         '
         'refreshButton
         '
+        Me.refreshButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.refreshButton.Location = New System.Drawing.Point(386, 134)
         Me.refreshButton.Name = "refreshButton"
         Me.refreshButton.Size = New System.Drawing.Size(70, 28)
@@ -396,6 +401,7 @@ Partial Class tb_buku
         '
         'keluarButton
         '
+        Me.keluarButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.keluarButton.Location = New System.Drawing.Point(539, 134)
         Me.keluarButton.Name = "keluarButton"
         Me.keluarButton.Size = New System.Drawing.Size(70, 28)
@@ -405,6 +411,7 @@ Partial Class tb_buku
         '
         'batalButton
         '
+        Me.batalButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.batalButton.Location = New System.Drawing.Point(685, 131)
         Me.batalButton.Name = "batalButton"
         Me.batalButton.Size = New System.Drawing.Size(70, 28)
@@ -412,7 +419,7 @@ Partial Class tb_buku
         Me.batalButton.Text = "BATAL"
         Me.batalButton.UseVisualStyleBackColor = True
         '
-        'Form1
+        'tb_buku
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -437,7 +444,7 @@ Partial Class tb_buku
         Me.Controls.Add(Tb_DataAnggota_Tb_Buku_id_BukuLabel)
         Me.Controls.Add(Me.Tb_DataAnggota_Tb_Buku_id_BukuTextBox)
         Me.Controls.Add(Me.Tb_bukuBindingNavigator)
-        Me.Name = "Form1"
+        Me.Name = "tb_buku"
         Me.Text = "Form1"
         CType(Me.PerpustakaanDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tb_bukuBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

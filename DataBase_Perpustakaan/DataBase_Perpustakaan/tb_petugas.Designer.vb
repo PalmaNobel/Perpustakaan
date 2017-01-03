@@ -23,26 +23,26 @@ Partial Class tb_petugas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(tb_petugas))
         Dim Id_PetugasLabel As System.Windows.Forms.Label
         Dim Jadwal_tugasLabel As System.Windows.Forms.Label
         Dim Nama_petugasLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(tb_petugas))
         Me.PerpustakaanDataSet = New DataBase_Perpustakaan.perpustakaanDataSet()
         Me.Tb_petugasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tb_petugasTableAdapter = New DataBase_Perpustakaan.perpustakaanDataSetTableAdapters.tb_petugasTableAdapter()
         Me.TableAdapterManager = New DataBase_Perpustakaan.perpustakaanDataSetTableAdapters.TableAdapterManager()
         Me.Tb_petugasBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.Tb_petugasBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.Tb_petugasDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -68,6 +68,33 @@ Partial Class tb_petugas
         Me.Tb_petugasBindingNavigator.SuspendLayout()
         CType(Me.Tb_petugasDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Id_PetugasLabel
+        '
+        Id_PetugasLabel.AutoSize = True
+        Id_PetugasLabel.Location = New System.Drawing.Point(408, 89)
+        Id_PetugasLabel.Name = "Id_PetugasLabel"
+        Id_PetugasLabel.Size = New System.Drawing.Size(60, 13)
+        Id_PetugasLabel.TabIndex = 2
+        Id_PetugasLabel.Text = "id Petugas:"
+        '
+        'Jadwal_tugasLabel
+        '
+        Jadwal_tugasLabel.AutoSize = True
+        Jadwal_tugasLabel.Location = New System.Drawing.Point(408, 116)
+        Jadwal_tugasLabel.Name = "Jadwal_tugasLabel"
+        Jadwal_tugasLabel.Size = New System.Drawing.Size(69, 13)
+        Jadwal_tugasLabel.TabIndex = 4
+        Jadwal_tugasLabel.Text = "jadwal tugas:"
+        '
+        'Nama_petugasLabel
+        '
+        Nama_petugasLabel.AutoSize = True
+        Nama_petugasLabel.Location = New System.Drawing.Point(408, 141)
+        Nama_petugasLabel.Name = "Nama_petugasLabel"
+        Nama_petugasLabel.Size = New System.Drawing.Size(77, 13)
+        Nama_petugasLabel.TabIndex = 6
+        Nama_petugasLabel.Text = "nama petugas:"
         '
         'PerpustakaanDataSet
         '
@@ -112,6 +139,31 @@ Partial Class tb_petugas
         Me.Tb_petugasBindingNavigator.TabIndex = 0
         Me.Tb_petugasBindingNavigator.Text = "BindingNavigator1"
         '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorDeleteItem.Text = "Delete"
+        '
         'BindingNavigatorMoveFirstItem
         '
         Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -144,16 +196,9 @@ Partial Class tb_petugas
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
         'BindingNavigatorSeparator1
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
         Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'BindingNavigatorMoveNextItem
@@ -176,26 +221,8 @@ Partial Class tb_petugas
         '
         'BindingNavigatorSeparator2
         '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
         Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'Tb_petugasBindingNavigatorSaveItem
         '
@@ -234,15 +261,6 @@ Partial Class tb_petugas
         Me.DataGridViewTextBoxColumn3.HeaderText = "nama_petugas"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
-        'Id_PetugasLabel
-        '
-        Id_PetugasLabel.AutoSize = True
-        Id_PetugasLabel.Location = New System.Drawing.Point(408, 89)
-        Id_PetugasLabel.Name = "Id_PetugasLabel"
-        Id_PetugasLabel.Size = New System.Drawing.Size(60, 13)
-        Id_PetugasLabel.TabIndex = 2
-        Id_PetugasLabel.Text = "id Petugas:"
-        '
         'Id_PetugasTextBox
         '
         Me.Id_PetugasTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tb_petugasBindingSource, "id_Petugas", True))
@@ -251,15 +269,6 @@ Partial Class tb_petugas
         Me.Id_PetugasTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Id_PetugasTextBox.TabIndex = 3
         '
-        'Jadwal_tugasLabel
-        '
-        Jadwal_tugasLabel.AutoSize = True
-        Jadwal_tugasLabel.Location = New System.Drawing.Point(408, 116)
-        Jadwal_tugasLabel.Name = "Jadwal_tugasLabel"
-        Jadwal_tugasLabel.Size = New System.Drawing.Size(69, 13)
-        Jadwal_tugasLabel.TabIndex = 4
-        Jadwal_tugasLabel.Text = "jadwal tugas:"
-        '
         'Jadwal_tugasDateTimePicker
         '
         Me.Jadwal_tugasDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.Tb_petugasBindingSource, "jadwal_tugas", True))
@@ -267,15 +276,6 @@ Partial Class tb_petugas
         Me.Jadwal_tugasDateTimePicker.Name = "Jadwal_tugasDateTimePicker"
         Me.Jadwal_tugasDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.Jadwal_tugasDateTimePicker.TabIndex = 5
-        '
-        'Nama_petugasLabel
-        '
-        Nama_petugasLabel.AutoSize = True
-        Nama_petugasLabel.Location = New System.Drawing.Point(408, 141)
-        Nama_petugasLabel.Name = "Nama_petugasLabel"
-        Nama_petugasLabel.Size = New System.Drawing.Size(77, 13)
-        Nama_petugasLabel.TabIndex = 6
-        Nama_petugasLabel.Text = "nama petugas:"
         '
         'Nama_petugasTextBox
         '
@@ -297,63 +297,70 @@ Partial Class tb_petugas
         '
         'tambahButton
         '
+        Me.tambahButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tambahButton.Location = New System.Drawing.Point(400, 190)
         Me.tambahButton.Name = "tambahButton"
-        Me.tambahButton.Size = New System.Drawing.Size(85, 29)
+        Me.tambahButton.Size = New System.Drawing.Size(93, 29)
         Me.tambahButton.TabIndex = 9
         Me.tambahButton.Text = "TAMBAH"
         Me.tambahButton.UseVisualStyleBackColor = True
         '
         'editButton
         '
+        Me.editButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.editButton.Location = New System.Drawing.Point(524, 190)
         Me.editButton.Name = "editButton"
-        Me.editButton.Size = New System.Drawing.Size(85, 29)
+        Me.editButton.Size = New System.Drawing.Size(93, 29)
         Me.editButton.TabIndex = 10
         Me.editButton.Text = "EDIT"
         Me.editButton.UseVisualStyleBackColor = True
         '
         'hapusButton
         '
+        Me.hapusButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.hapusButton.Location = New System.Drawing.Point(657, 190)
         Me.hapusButton.Name = "hapusButton"
-        Me.hapusButton.Size = New System.Drawing.Size(85, 29)
+        Me.hapusButton.Size = New System.Drawing.Size(93, 29)
         Me.hapusButton.TabIndex = 11
         Me.hapusButton.Text = "HAPUS"
         Me.hapusButton.UseVisualStyleBackColor = True
         '
         'simpanButton
         '
+        Me.simpanButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.simpanButton.Location = New System.Drawing.Point(778, 190)
         Me.simpanButton.Name = "simpanButton"
-        Me.simpanButton.Size = New System.Drawing.Size(85, 29)
+        Me.simpanButton.Size = New System.Drawing.Size(93, 29)
         Me.simpanButton.TabIndex = 12
         Me.simpanButton.Text = "SIMPAN"
         Me.simpanButton.UseVisualStyleBackColor = True
         '
         'refreshButton
         '
+        Me.refreshButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.refreshButton.Location = New System.Drawing.Point(464, 244)
         Me.refreshButton.Name = "refreshButton"
-        Me.refreshButton.Size = New System.Drawing.Size(85, 29)
+        Me.refreshButton.Size = New System.Drawing.Size(93, 29)
         Me.refreshButton.TabIndex = 13
         Me.refreshButton.Text = "REFRESH"
         Me.refreshButton.UseVisualStyleBackColor = True
         '
         'batalButton
         '
+        Me.batalButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.batalButton.Location = New System.Drawing.Point(593, 244)
         Me.batalButton.Name = "batalButton"
-        Me.batalButton.Size = New System.Drawing.Size(85, 29)
+        Me.batalButton.Size = New System.Drawing.Size(93, 29)
         Me.batalButton.TabIndex = 14
         Me.batalButton.Text = "BATAL"
         Me.batalButton.UseVisualStyleBackColor = True
         '
         'keluarButton
         '
+        Me.keluarButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.keluarButton.Location = New System.Drawing.Point(722, 244)
         Me.keluarButton.Name = "keluarButton"
-        Me.keluarButton.Size = New System.Drawing.Size(85, 29)
+        Me.keluarButton.Size = New System.Drawing.Size(93, 29)
         Me.keluarButton.TabIndex = 15
         Me.keluarButton.Text = "KELUAR"
         Me.keluarButton.UseVisualStyleBackColor = True

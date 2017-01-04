@@ -355,9 +355,9 @@ Partial Class tb_pengembalian
         'simpanButton
         '
         Me.simpanButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.simpanButton.Location = New System.Drawing.Point(782, 182)
+        Me.simpanButton.Location = New System.Drawing.Point(773, 182)
         Me.simpanButton.Name = "simpanButton"
-        Me.simpanButton.Size = New System.Drawing.Size(75, 23)
+        Me.simpanButton.Size = New System.Drawing.Size(84, 23)
         Me.simpanButton.TabIndex = 14
         Me.simpanButton.Text = "SIMPAN"
         Me.simpanButton.UseVisualStyleBackColor = True
@@ -365,9 +365,9 @@ Partial Class tb_pengembalian
         'refreshButton
         '
         Me.refreshButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.refreshButton.Location = New System.Drawing.Point(531, 230)
+        Me.refreshButton.Location = New System.Drawing.Point(508, 230)
         Me.refreshButton.Name = "refreshButton"
-        Me.refreshButton.Size = New System.Drawing.Size(75, 23)
+        Me.refreshButton.Size = New System.Drawing.Size(98, 23)
         Me.refreshButton.TabIndex = 15
         Me.refreshButton.Text = "REFRESH"
         Me.refreshButton.UseVisualStyleBackColor = True
@@ -377,7 +377,7 @@ Partial Class tb_pengembalian
         Me.keluarButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.keluarButton.Location = New System.Drawing.Point(633, 230)
         Me.keluarButton.Name = "keluarButton"
-        Me.keluarButton.Size = New System.Drawing.Size(75, 23)
+        Me.keluarButton.Size = New System.Drawing.Size(84, 23)
         Me.keluarButton.TabIndex = 16
         Me.keluarButton.Text = "KELUAR"
         Me.keluarButton.UseVisualStyleBackColor = True

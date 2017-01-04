@@ -354,7 +354,7 @@ Partial Class tb_buku
         Me.tambahButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tambahButton.Location = New System.Drawing.Point(319, 74)
         Me.tambahButton.Name = "tambahButton"
-        Me.tambahButton.Size = New System.Drawing.Size(70, 28)
+        Me.tambahButton.Size = New System.Drawing.Size(91, 28)
         Me.tambahButton.TabIndex = 13
         Me.tambahButton.Text = "TAMBAH"
         Me.tambahButton.UseVisualStyleBackColor = True
@@ -382,9 +382,9 @@ Partial Class tb_buku
         'simpanButton
         '
         Me.simpanButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.simpanButton.Location = New System.Drawing.Point(752, 74)
+        Me.simpanButton.Location = New System.Drawing.Point(742, 74)
         Me.simpanButton.Name = "simpanButton"
-        Me.simpanButton.Size = New System.Drawing.Size(70, 28)
+        Me.simpanButton.Size = New System.Drawing.Size(80, 28)
         Me.simpanButton.TabIndex = 16
         Me.simpanButton.Text = "SIMPAN"
         Me.simpanButton.UseVisualStyleBackColor = True
@@ -394,7 +394,7 @@ Partial Class tb_buku
         Me.refreshButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.refreshButton.Location = New System.Drawing.Point(386, 134)
         Me.refreshButton.Name = "refreshButton"
-        Me.refreshButton.Size = New System.Drawing.Size(70, 28)
+        Me.refreshButton.Size = New System.Drawing.Size(93, 28)
         Me.refreshButton.TabIndex = 17
         Me.refreshButton.Text = "REFRESH"
         Me.refreshButton.UseVisualStyleBackColor = True
@@ -404,7 +404,7 @@ Partial Class tb_buku
         Me.keluarButton.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.keluarButton.Location = New System.Drawing.Point(539, 134)
         Me.keluarButton.Name = "keluarButton"
-        Me.keluarButton.Size = New System.Drawing.Size(70, 28)
+        Me.keluarButton.Size = New System.Drawing.Size(84, 28)
         Me.keluarButton.TabIndex = 18
         Me.keluarButton.Text = "KELUAR"
         Me.keluarButton.UseVisualStyleBackColor = True

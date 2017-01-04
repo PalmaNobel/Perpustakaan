@@ -67,27 +67,30 @@ Partial Class login
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(100, 213)
+        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(31, 218)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(69, 24)
+        Me.Button1.Size = New System.Drawing.Size(142, 24)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "LOGIN"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(212, 213)
+        Me.Button2.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(179, 218)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(69, 24)
+        Me.Button2.Size = New System.Drawing.Size(142, 24)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "CANCEL"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(331, 213)
+        Me.Button3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(330, 218)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(69, 24)
+        Me.Button3.Size = New System.Drawing.Size(142, 24)
         Me.Button3.TabIndex = 6
         Me.Button3.Text = "CLOSE"
         Me.Button3.UseVisualStyleBackColor = True

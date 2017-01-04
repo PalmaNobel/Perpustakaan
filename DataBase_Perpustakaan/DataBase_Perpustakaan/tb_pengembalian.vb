@@ -73,7 +73,7 @@
     End Sub
 
     Private Sub refreshButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles refreshButton.Click
-        Me.Tb_pengembalianBindingSource.Fill(Me.PerpustakaanDataSet.tb_pengembalian)
+        Me.Tb_pengembalianTableAdapter.Fill(Me.PerpustakaanDataSet.tb_pengembalian)
     End Sub
 
     Private Sub batalButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles batalButton.Click
